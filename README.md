@@ -1,4 +1,4 @@
-# PCLCE Login Patch
+# PCLCE Patch
 PCLCE破解版
 
 让PCLCE在不先登录正版的情况下可以离线、第三方登录，并且解锁了个性化颜色
