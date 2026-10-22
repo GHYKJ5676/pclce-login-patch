@@ -1,7 +1,7 @@
 # PCLCE X
 PCLCE破解版
 
-让PCLCE在不先登录正版的情况下可以离线、第三方登录，并且解锁了个性化颜色
+让PCLCE在不先登录正版的情况下可以离线、第三方登录，移除了地区限制，并且解锁了个性化颜色
 
 > [!NOTE]
 > 这是第三方仓库，如果您遇到登录以外的问题，请去官方仓库反馈，官方仓库为[PCL-community/PCL-CE](https://github.com/PCL-community/PCL-CE)
