@@ -1,0 +1,37 @@
+<local:MyPageRight x:Class="PCL.PageLaunchRight"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:local="clr-namespace:PCL">
+    <local:MyScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" x:Name="PanBack">
+        <StackPanel Name="PanMain" Margin="25,25,25,10" Grid.IsSharedSizeScope="True">
+            <StackPanel x:Name="PanCustom" />
+            <local:MyCard Margin="0,0,0,15" Title="登录破解说明">
+                <StackPanel Margin="25,38,23,15">
+                    <TextBlock Margin="0,0,0,6" FontSize="13.5" Foreground="#E0A030" FontWeight="Bold" Text="此版本的登录机制由GHYKJ破解" TextWrapping="Wrap" />
+                    <TextBlock Margin="0,0,0,8" FontSize="12.5" Opacity="0.8" TextWrapping="Wrap" LineHeight="18" Text="已移除正版验证限制，支持离线与第三方登录。" />
+                    <local:MyButton
+                        HorizontalAlignment="Left"
+                        ColorType="Highlight"
+                        Padding="10,0"
+                        local:CustomEventService.EventData="https://github.com/ghykj5676/pclce-login-patch/issues"
+                        local:CustomEventService.EventType="OpenUrl"
+                        Text="登录问题反馈" />
+                </StackPanel>
+            </local:MyCard>
+            <local:MyCard Margin="0,0,0,15" Title="{DynamicResource Launch.Right.CommunityHint.Title}" x:Name="PanHint">
+                <local:MyIconButton LogoScale="1.1"
+                                    SvgIcon="lucide/x"
+                                    Height="20" Width="20" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Top"
+                                    x:Name="BtnHintClose"
+                                    Click="BtnHintClose_Click" />
+                <StackPanel Margin="25,38,23,15">
+                    <TextBlock x:Name="LabHint1" TextWrapping="Wrap" Margin="0,0,0,2" FontSize="13.5" />
+                    <TextBlock x:Name="LabHint2" TextWrapping="Wrap" Margin="0,0,0,2" FontSize="13.5" />
+                </StackPanel>
+            </local:MyCard>
+            <local:MyCard Margin="0,0,0,15" Title="{DynamicResource Launch.Right.Log.Title}" x:Name="PanLog">
+                <TextBlock x:Name="LabLog" Margin="20,38,20,18" TextTrimming="None" TextWrapping="Wrap" />
+            </local:MyCard>
+        </StackPanel>
+    </local:MyScrollViewer>
+</local:MyPageRight>
